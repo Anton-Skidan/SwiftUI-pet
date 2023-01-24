@@ -14,6 +14,14 @@
 		EBF7CE5629805A8F00613E9D /* SwiftUI_petTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE5529805A8F00613E9D /* SwiftUI_petTests.swift */; };
 		EBF7CE6029805A8F00613E9D /* SwiftUI_petUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE5F29805A8F00613E9D /* SwiftUI_petUITests.swift */; };
 		EBF7CE6229805A8F00613E9D /* SwiftUI_petUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE6129805A8F00613E9D /* SwiftUI_petUITestsLaunchTests.swift */; };
+		EBF7CE7029805D3200613E9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE6F29805D3100613E9D /* HomeView.swift */; };
+		EBF7CE7229805D6600613E9D /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7129805D6600613E9D /* CategoriesView.swift */; };
+		EBF7CE7429805D8400613E9D /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7329805D8400613E9D /* NewRecipeView.swift */; };
+		EBF7CE7629805DA800613E9D /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7529805DA800613E9D /* FavoritesView.swift */; };
+		EBF7CE7829805DD000613E9D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7729805DD000613E9D /* SettingsView.swift */; };
+		EBF7CE7A29805F3900613E9D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7929805F3900613E9D /* TabBarView.swift */; };
+		EBF7CE7D2980614200613E9D /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7C2980614200613E9D /* RecipeModel.swift */; };
+		EBF7CE802980668D00613E9D /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7CE7F2980668D00613E9D /* RecipeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		EBF7CE5B29805A8F00613E9D /* SwiftUI-petUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-petUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF7CE5F29805A8F00613E9D /* SwiftUI_petUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_petUITests.swift; sourceTree = "<group>"; };
 		EBF7CE6129805A8F00613E9D /* SwiftUI_petUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_petUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBF7CE6F29805D3100613E9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EBF7CE7129805D6600613E9D /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		EBF7CE7329805D8400613E9D /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
+		EBF7CE7529805DA800613E9D /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		EBF7CE7729805DD000613E9D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EBF7CE7929805F3900613E9D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		EBF7CE7C2980614200613E9D /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		EBF7CE7F2980668D00613E9D /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				EBF7CE4429805A8F00613E9D /* SwiftUI_petApp.swift */,
-				EBF7CE4629805A8F00613E9D /* ContentView.swift */,
+				EBF7CE6E29805D1800613E9D /* RootViews */,
+				EBF7CE7E2980667100613E9D /* CommonViews */,
+				EBF7CE7B2980612400613E9D /* Models */,
 				EBF7CE4829805A8F00613E9D /* Assets.xcassets */,
 				EBF7CE4A29805A8F00613E9D /* Preview Content */,
 			);
@@ -125,6 +143,36 @@
 				EBF7CE6129805A8F00613E9D /* SwiftUI_petUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-petUITests";
+			sourceTree = "<group>";
+		};
+		EBF7CE6E29805D1800613E9D /* RootViews */ = {
+			isa = PBXGroup;
+			children = (
+				EBF7CE4629805A8F00613E9D /* ContentView.swift */,
+				EBF7CE7929805F3900613E9D /* TabBarView.swift */,
+				EBF7CE6F29805D3100613E9D /* HomeView.swift */,
+				EBF7CE7129805D6600613E9D /* CategoriesView.swift */,
+				EBF7CE7329805D8400613E9D /* NewRecipeView.swift */,
+				EBF7CE7529805DA800613E9D /* FavoritesView.swift */,
+				EBF7CE7729805DD000613E9D /* SettingsView.swift */,
+			);
+			path = RootViews;
+			sourceTree = "<group>";
+		};
+		EBF7CE7B2980612400613E9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBF7CE7C2980614200613E9D /* RecipeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBF7CE7E2980667100613E9D /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				EBF7CE7F2980668D00613E9D /* RecipeCard.swift */,
+			);
+			path = CommonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF7CE7829805DD000613E9D /* SettingsView.swift in Sources */,
+				EBF7CE802980668D00613E9D /* RecipeCard.swift in Sources */,
+				EBF7CE7229805D6600613E9D /* CategoriesView.swift in Sources */,
+				EBF7CE7A29805F3900613E9D /* TabBarView.swift in Sources */,
+				EBF7CE7429805D8400613E9D /* NewRecipeView.swift in Sources */,
+				EBF7CE7629805DA800613E9D /* FavoritesView.swift in Sources */,
+				EBF7CE7029805D3200613E9D /* HomeView.swift in Sources */,
 				EBF7CE4729805A8F00613E9D /* ContentView.swift in Sources */,
 				EBF7CE4529805A8F00613E9D /* SwiftUI_petApp.swift in Sources */,
+				EBF7CE7D2980614200613E9D /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
