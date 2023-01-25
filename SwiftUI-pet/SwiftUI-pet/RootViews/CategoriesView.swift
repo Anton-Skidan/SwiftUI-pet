@@ -10,9 +10,18 @@ import SwiftUI
 struct CategoriesView: View {
     var body: some View {
         NavigationView {
-            Text("Категории")
-                .navigationTitle("Категории")
+            List {
+                ForEach(RecipeCategory.allCases) { category in
+                    NavigationLink {
+                        CategoryView(category: category)
+                    } label: {
+                        Text(category.rawValue)
+                    }
+                }
+            }
+            .navigationTitle("Категории")
         }
+        
     }
 }
 

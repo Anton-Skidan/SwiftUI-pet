@@ -7,16 +7,18 @@
 
 import Foundation
 
-enum Category: String {
-    case breakfast
-    case soup
-    case salad
-    case appetizer
-    case main
-    case side
-    case dessert
-    case snack
-    case drink
+enum RecipeCategory: String, CaseIterable, Identifiable {
+    var id: String { self.rawValue }
+    
+    case breakfast = "завтраки"
+    case soup = "супы"
+    case salad = "салаты"
+    case appetizer = "закуски"
+    case main = "блюда на первое"
+    case side = "блюда на второе"
+    case dessert = "десерты"
+    case snack = "снеки"
+    case drink = "напитки"
 }
 
 struct RecipeModel: Identifiable {
@@ -26,7 +28,7 @@ struct RecipeModel: Identifiable {
     let description: String
     let ingredients: String
     let directions: String
-    let category: Category
+    let category: RecipeCategory
     let datePublished: String
     let url: String
 }
@@ -53,11 +55,14 @@ extension RecipeModel {
                                                             """,
                                                directions: """
                                                              В сотейнике растопить сало, нарезанное мелкими кубиками.
-                                                             Добавить мясо, нарезанное небольшими кусочками. Обжарить до румяной корочки.
-                                                             Затем добавить морковь, нарезанную кружочками. Обжаривать 5 минут.
+                                                             Добавить мясо, нарезанное небольшими кусочками.
+                                                             Обжарить до румяной корочки.
+                                                             Затем добавить морковь, нарезанную кружочками.
+                                                             Обжаривать 5 минут.
                                                              Лук, нарезанный полукольцами. Обжаривать 5 минут.
                                                              Болгарский перец, нарезанный дольками. Ещё 5 минут.
-                                                             Добавить крупно нарезанный картофель, кусочек сливочного масла, 200 мл воды, специи, сушёную петрушку и соль. Не перемешивать.
+                                                             Добавить крупно нарезанный картофель, кусочек сливочного масла, 200 мл воды, специи, сушёную петрушку и соль.
+                                                             Не перемешивать.
                                                              Накрыть крышкой, убавить огонь и тушить на медленном огне 40 минут.
                                                            """,
                                                category: .main,
